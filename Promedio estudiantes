@@ -1,0 +1,24 @@
+let notas = [1, 2, 3, 4, 5, 8]; // Se pueden cambiar los valores de las notas
+
+
+let nombre = "Carlos"; 
+
+
+function calcularPromedio(notas) {
+    let suma = 0;
+
+    
+    for (let i = 0; i < notas.length; i++) {
+        suma += notas[i];
+    }
+
+    
+    let promedio = suma / notas.length;
+
+    
+    return promedio;
+}
+
+
+let promedioFinal = calcularPromedio(notas);
+console.log("El promedio de las notas de " + nombre + " es: " + promedioFinal.toFixed(2));
